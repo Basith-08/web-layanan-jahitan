@@ -1,0 +1,519 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp,container-queries"></script>
+    <!-- Font Awesome CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+
+    <!-- <script src="https://cdn.tailwindcss.com"></script> -->
+    <link rel="stylesheet" href="./css/jumbotron.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+
+    <title>Layanan jahit | Sutera BXCH</title>
+  </head>
+  <body>
+    <div class="@container">
+      <div class="@lg:text-gray-800">
+        <!-- Navbar -->
+        <nav class="bg-gray-800 text-white shadow-md sticky top-0 z-50">
+          <div class="max-w-7xl mx-auto px-4 lg:px-8">
+            <div class="flex items-center justify-between h-16">
+              <!-- Logo -->
+              <div class="flex-shrink-0">
+                <a href="/" class="text-xl font-bold">Sutera BXCH</a>
+              </div>
+
+              <!-- Navbar Menu Desktop -->
+              <div class="hidden md:block">
+                <div class="ml-10 flex item-baseline space-x-4">
+                  <a href="#" class="menu-item-desktop">Home</a>
+                  <a href="#about" class="menu-item-desktop">Tentang Kami</a>
+                  <a href="#service" class="menu-item-desktop">Layanan</a>
+                  <a href="#gallery" class="menu-item-desktop">Galeri</a>
+                  <a href="#testimonials" class="menu-item-desktop"
+                    >Testimonial</a
+                  >
+                  <a href="#contact" class="menu-item-desktop">Kontak</a>
+                </div>
+              </div>
+
+              <!-- Mobile Menu Button -->
+              <div class="-mr-2 flex md:hidden">
+                <button
+                  type="button"
+                  class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-offet-2 focus:ting-white"
+                  aria-controls="mobile-menu"
+                  aria-expanded="false"
+                >
+                  <span class="sr-only">Open Main Menu</span>
+                  <svg
+                    class="block h-6 w-6"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                    aria-hidden="true"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M4 6h16M4 12h16M4 18h16"
+                    ></path>
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Mobile Menu -->
+          <div class="md:hidden" id="mobile-menu">
+            <div class="px-2 pt-2 bb-3 space-y-1 sm:px-3">
+              <a href="/" class="menu-item-mobile">Home</a>
+              <a href="#about" class="menu-item-mobile">Tentang Kami</a>
+              <a href="#service" class="menu-item-mobile">Layanan</a>
+              <a href="#gallery" class="menu-item-mobile">Galeri</a>
+              <a href="#testimonials" class="menu-item-mobile">Testimonial</a>
+              <a href="#contact" class="menu-item-mobile">Kontak</a>
+            </div>
+          </div>
+        </nav>
+
+        <!-- Jumbotron -->
+        <div
+          class="relative w-full h-screen bg-cover bg-center"
+          style="background-image: url('./assets/jumbotron.jpeg')"
+        >
+          <div class="absolute inset-0 bg-black opacity-50"></div>
+          <!-- Overlay Gelap -->
+
+          <div
+            class="flex items-center justify-center absolute inset-0 text-center text-white p-8"
+          >
+            <div>
+              <!-- Nama Brand dengan Animasi Ketik -->
+              <h1 class="text-5xl font-extrabold mb-4 typing" id="brand-name">
+                Sutera BXCH
+              </h1>
+
+              <!-- Jargon -->
+              <h3 class="text-2xl italic mb-5">
+                Menyulap Setiap Jahitan Menjadi Karya Kelas Satu
+              </h3>
+
+              <div
+                class="flex justify-center space-x-4 flex-col md:flex-row gap-4 text-center"
+              >
+                <a
+                  href="#contact"
+                  class="bg-gray-800 text-white py-3 px-6 rounded-lg text-lg font-semibold hover:bg-yellow-600 transition duration-300"
+                >
+                  Hubungi Kami Sekarang
+                </a>
+                <a
+                  href="#service"
+                  class="ml-4 bg-transparent border-2 border-white text-white py-3 px-6 rounded-lg text-lg font-semibold hover:bg-white hover transition duration-300"
+                >
+                  Lihat Layanan Kami
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- About Us -->
+        <section id="about" class="py-16 bg-gray-50">
+          <div class="container mx-auto px-6 text-center">
+            <h2 class="text-3xl font-semibold mb-6">Tentang Kami</h2>
+            <p
+              class="text-lg mb-8 max-w-3xl mx-auto leading-relaxed text-justify"
+            >
+              Kami adalah tim profesional yang berdedikasi untuk memberikan
+              layanan jahitan terbaik. Dengan pengalaman bertahun-tahun di
+              industri fashion, kami siap memberikan sentuhan seni dalam setiap
+              jahitan. Fokus kami adalah pada kualitas, ketepatan waktu, dan
+              kepuasan pelanggan. Setiap produk yang kami hasilkan adalah karya
+              yang penuh dengan dedikasi dan kreativitas.
+            </p>
+
+            <!-- Team Image and Text Section -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+              <!-- Gambar Tim atau Kantor -->
+              <div class="relative">
+                <img
+                  src="./assets/tim.png"
+                  alt="Tim Jahit"
+                  class="w-full h-64 object-cover rounded-lg shadow-lg"
+                />
+                <div
+                  class="absolute inset-0 bg-black opacity-30 rounded-lg"
+                ></div>
+              </div>
+
+              <!-- Deskripsi Tentang Kami -->
+              <div class="flex flex-col justify-center space-y-4 text-start">
+                <h3 class="text-2xl font-semibold mb-4">
+                  Mengapa Memilih Kami?
+                </h3>
+                <ul
+                  class="list-disc list-inside space-y-2 pl-6 text-lg leading-relaxed"
+                >
+                  <li>Kualitas Jahitan yang Terjamin</li>
+                  <li>Desain dan Custom yang Tepat</li>
+                  <li>Pengalaman Bertahun-tahun di Industri Fashion</li>
+                  <li>Proses Cepat dan Tepat Waktu</li>
+                  <li>Pelanggan Puas adalah Prioritas Kami</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Service -->
+        <section id="service" class="py-16 bg-gray-100">
+          <div class="container mx-auto text-center">
+            <h2 class="text-3xl font-semibold mb-6">Layanan Kami</h2>
+            <p class="text-lg mb-8">
+              Kami menawarkan berbagai layanan jahitan untuk memenuhi semua
+              kebutuhan fashion Anda.
+            </p>
+
+            <!-- Grid Layanan dengan Gambar -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+              <!-- Layanan 1 -->
+              <div class="bg-white shadow-lg rounded-lg p-6">
+                <div class="mb-4">
+                  <img
+                    src="./assets/layanan/JasPria.jpeg"
+                    alt="Layanan Jas & Pakaian Pria"
+                    class="w-full h-80 object-cover rounded-t-lg"
+                  />
+                </div>
+                <h3 class="text-2xl font-semibold mb-4">Jas & Pakaian Pria</h3>
+                <p class="text-lg">
+                  Jahitan rapi dan elegan untuk berbagai kebutuhan jas dan
+                  pakaian formal pria.
+                </p>
+              </div>
+
+              <!-- Layanan 2 -->
+              <div class="bg-white shadow-lg rounded-lg p-6">
+                <div class="mb-4">
+                  <img
+                    src="./assets/layanan/gaun.png"
+                    alt="Layanan Blus & Gaun"
+                    class="w-full h-80 object-cover rounded-t-lg"
+                  />
+                </div>
+                <h3 class="text-2xl font-semibold mb-4">Blus & Gaun</h3>
+                <p class="text-lg">
+                  Desain custom dan jahitan detail untuk blus dan gaun yang
+                  menawan.
+                </p>
+              </div>
+
+              <!-- Layanan 3 -->
+              <div class="bg-white shadow-lg rounded-lg p-6">
+                <div class="mb-4">
+                  <img
+                    src="./assets/layanan/alterasi.png"
+                    alt="Layanan Alterasi & Perbaikan"
+                    class="w-full h-80 object-cover rounded-t-lg"
+                  />
+                </div>
+                <h3 class="text-2xl font-semibold mb-4">
+                  Alterasi & Perbaikan
+                </h3>
+                <p class="text-lg">
+                  Layanan perbaikan dan perubahan ukuran dengan hasil sempurna.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="gallery" class="py-16">
+          <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center mb-12">Our Gallery</h2>
+
+            <div
+              id="gallery"
+              class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8"
+            >
+              <!-- Image 1 -->
+              <div class="relative overflow-hidden rounded-lg shadow-lg">
+                <img
+                  src="./assets/gallery/1.png"
+                  alt="Gallery Image 1"
+                  class="w-full h-full object-cover transform transition duration-500 hover:scale-110"
+                />
+              </div>
+
+              <!-- Image 2 -->
+              <div class="relative overflow-hidden rounded-lg shadow-lg">
+                <img
+                  src="./assets/gallery/2.png"
+                  alt="Gallery Image 2"
+                  class="w-full h-full object-cover transform transition duration-500 hover:scale-110"
+                />
+              </div>
+
+              <!-- Image 3 -->
+              <div class="relative overflow-hidden rounded-lg shadow-lg">
+                <img
+                  src="./assets/gallery/3.png"
+                  alt="Gallery Image 3"
+                  class="w-full h-full object-cover transform transition duration-500 hover:scale-110"
+                />
+              </div>
+
+              <!-- Image 4 -->
+              <div class="relative overflow-hidden rounded-lg shadow-lg">
+                <img
+                  src="./assets/gallery/4.png"
+                  alt="Gallery Image 4"
+                  class="w-full h-full object-cover transform transition duration-500 hover:scale-110"
+                />
+              </div>
+
+              <!-- Image 5 -->
+              <div class="relative overflow-hidden rounded-lg shadow-lg">
+                <img
+                  src="./assets/gallery/5.png"
+                  alt="Gallery Image 5"
+                  class="w-full h-full object-cover transform transition duration-500 hover:scale-110"
+                />
+              </div>
+
+              <!-- Image 6 -->
+              <div class="relative overflow-hidden rounded-lg shadow-lg">
+                <img
+                  src="./assets/gallery/6.png"
+                  alt="Gallery Image 6"
+                  class="w-full h-full object-cover transform transition duration-500 hover:scale-110"
+                />
+              </div>
+
+              <!-- Image 7 -->
+              <div class="relative overflow-hidden rounded-lg shadow-lg">
+                <img
+                  src="./assets/gallery/7.png"
+                  alt="Gallery Image 7"
+                  class="w-full h-full object-cover transform transition duration-500 hover:scale-110"
+                />
+              </div>
+
+              <!-- Image 8 -->
+              <div class="relative overflow-hidden rounded-lg shadow-lg">
+                <img
+                  src="./assets/gallery/8.png"
+                  alt="Gallery Image 8"
+                  class="w-full h-full object-cover transform transition duration-500 hover:scale-110"
+                />
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Testimonial -->
+        <section id="testimonials" class="py-16 bg-gray-100">
+          <div class="container mx-auto text-center">
+            <h2 class="text-3xl font-semibold mb-8">Testimonial Pelanggan</h2>
+            <p class="text-lg mb-12 max-w-3xl mx-auto">
+              Kami bangga dengan kualitas layanan kami, dan berikut adalah
+              beberapa testimoni dari pelanggan yang puas dengan hasil jahitan
+              kami.
+            </p>
+
+            <!-- Testimonial Cards -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+              <!-- Testimonial 1 -->
+              <div class="bg-white shadow-lg rounded-lg p-6">
+                <div class="mb-4">
+                  <img
+                    src="./assets/profile/JHON.png"
+                    alt="Pelanggan 1"
+                    class="w-20 h-20 rounded-full mx-auto"
+                  />
+                </div>
+                <p class="text-lg italic mb-4">
+                  "Saya sangat puas dengan kualitas jahitan dan desain yang
+                  diberikan. Layanan sangat cepat dan tepat waktu!"
+                </p>
+                <p class="font-semibold">John Doe</p>
+                <p class="text-gray-500">Pelanggan Setia</p>
+              </div>
+
+              <!-- Testimonial 2 -->
+              <div class="bg-white shadow-lg rounded-lg p-6">
+                <div class="mb-4">
+                  <img
+                    src="./assets/profile/SARAH.png"
+                    alt="Pelanggan 2"
+                    class="w-20 h-20 rounded-full mx-auto"
+                  />
+                </div>
+                <p class="text-lg italic mb-4">
+                  "Layanan jahitan yang luar biasa! Saya akan kembali lagi untuk
+                  kebutuhan pakaian saya di masa depan."
+                </p>
+                <p class="font-semibold">Sarah Lee</p>
+                <p class="text-gray-500">Pengusaha</p>
+              </div>
+
+              <!-- Testimonial 3 -->
+              <div class="bg-white shadow-lg rounded-lg p-6">
+                <div class="mb-4">
+                  <img
+                    src="./assets/profile/SMITH.png"
+                    alt="Pelanggan 3"
+                    class="w-20 h-20 rounded-full mx-auto"
+                  />
+                </div>
+                <p class="text-lg italic mb-4">
+                  "Saya sangat merekomendasikan layanan ini. Hasil jahitan
+                  sempurna, dan semuanya sesuai dengan keinginan saya!"
+                </p>
+                <p class="font-semibold">Michael Smith</p>
+                <p class="text-gray-500">Profesional Mode</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Contact and Services Section (Example) -->
+        <section id="contact" class="py-16 bg-white">
+          <div class="container mx-auto text-center px-4">
+            <h2 class="text-3xl font-semibold mb-6">Hubungi Kami</h2>
+            <p class="text-lg mb-6">
+              Kami siap melayani kebutuhan jahitan Anda dengan kualitas terbaik.
+            </p>
+            <a
+              href="https://wa.me/6289630200555"
+              class="bg-gray-800 hover:bg-yellow-500 text-white py-3 px-6 rounded-lg text-lg font-semibold transition duration-300"
+            >
+              Hubungi Kami Sekarang
+            </a>
+          </div>
+        </section>
+      </div>
+    </div>
+
+    <footer class="bg-gray-800 text-white py-8">
+      <div class="container mx-auto px-6">
+        <div
+          class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8"
+        >
+          <!-- Logo and Description -->
+          <div>
+            <a href="/" class="text-xl font-bold mb-4">Sutera BXCH</a>
+            <p class="text-gray-400">
+              Kami menghadirkan keindahan melalui setiap jahitan dengan kualitas
+              terbaik!
+            </p>
+          </div>
+
+          <!-- Useful Links -->
+          <div>
+            <h3 class="text-lg font-semibold mb-4">Useful Links</h3>
+            <ul>
+              <li>
+                <a href="#" class="text-gray-400 hover:text-white transition"
+                  >Home</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#about"
+                  class="text-gray-400 hover:text-white transition"
+                  >About Us</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#service"
+                  class="text-gray-400 hover:text-white transition"
+                  >Services</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#contact"
+                  class="text-gray-400 hover:text-white transition"
+                  >Contact</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <!-- Contact Information -->
+          <div>
+            <h3 class="text-lg font-semibold mb-4">Contact Us</h3>
+            <ul>
+              <li>
+                <p class="text-gray-400">
+                  Email:
+                  <a
+                    href="mailto:info@example.com"
+                    class="hover:text-white transition"
+                    >basithuni@gmail.com</a
+                  >
+                </p>
+              </li>
+              <li>
+                <p class="text-gray-400">
+                  Phone:
+                  <a href="tel:+123456789" class="hover:text-white transition"
+                    >+62 896 3028 0555</a
+                  >
+                </p>
+              </li>
+              <li>
+                <p class="text-gray-400">
+                  Address: Pamulang Timur, Pamulang, Tangerang Selatan
+                </p>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Social Media Links -->
+          <div>
+            <h3 class="text-lg font-semibold mb-4">Follow Us</h3>
+            <div class="flex space-x-4">
+              <a href="#" class="text-gray-400 hover:text-white transition">
+                <i class="fab fa-facebook fa-2x"></i>
+              </a>
+              <a href="#" class="text-gray-400 hover:text-white transition">
+                <i class="fab fa-twitter fa-2x"></i>
+              </a>
+              <a
+                href="https://instagram.com/asfbasith"
+                class="text-gray-400 hover:text-white transition"
+              >
+                <i class="fab fa-instagram fa-2x"></i>
+              </a>
+              <a href="#" class="text-gray-400 hover:text-white transition">
+                <i class="fab fa-linkedin fa-2x"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Copyright -->
+        <div class="mt-12 text-center">
+          <p class="text-gray-400 text-sm">
+            &copy; 2024 Sutera BXCH. All rights reserved.
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="./js/jumbotron.js"></script>
+    <script src="./js/navbar.js"></script>
+  </body>
+</html>
